@@ -1,0 +1,48 @@
+{
+  "name": "hr-performance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HR Team Performance & Task Management System (Next.js + Supabase)",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/unit/*.test.ts",
+    "test:db": "bash tests/db/run.sh",
+    "seed:demo": "node --env-file=.env.local scripts/seed-demo.mjs",
+    "create-admin": "node --env-file=.env.local scripts/create-admin.mjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.1.1",
+    "@supabase/ssr": ">=0.6.1 <1.0.0",
+    "@supabase/supabase-js": "^2.50.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": ">=0.460.0 <1.0.0",
+    "next": "^16.0.0",
+    "radix-ui": "^1.4.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-hook-form": "^7.60.0",
+    "recharts": "^3.1.0",
+    "server-only": "^0.0.1",
+    "sonner": "^2.0.6",
+    "tailwind-merge": "^3.3.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "@types/node": "^22.16.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "tailwindcss": "^4.1.11",
+    "tsx": "^4.20.3",
+    "tw-animate-css": "^1.3.5",
+    "typescript": "^5.9.2"
+  }
+}
